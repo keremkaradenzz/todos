@@ -55,7 +55,7 @@ export const todosSlice = createSlice({
     builder.addCase(postTodos.fulfilled, (state, action: PayloadAction<ITodos>) => {
       state.loading = false;
       if (state.data)
-        state.data = [...state?.data, action.payload];
+        state.data = [...state.data, action.payload];
       else
         state.data = [action.payload];
     });
