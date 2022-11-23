@@ -6,7 +6,7 @@ import {
 } from "react-redux";
 import todosSlice from "./slices/todosSlice";
 
-// @ts-ignore
+
 export const store = configureStore({
   reducer: {
     todos: todosSlice,
